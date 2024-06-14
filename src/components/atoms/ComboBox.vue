@@ -15,6 +15,7 @@
 		:filter="filter_owners"
 		outlined
 		dense
+		clearable
 		>
 		<template v-for="(_, name) in $scopedSlots" v-slot:[name]="slotData">
 			<slot :name="name" v-bind="slotData"/>
@@ -82,7 +83,7 @@
 		computed: {
 			rules(){
 				if(this.isRequired){
-					return [v => !!v];
+					return [v => !!v || "Este campo é obrigatório"];
 				}
 				return [];
 			},

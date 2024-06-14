@@ -3,8 +3,10 @@
     :label="label"
     v-model="dado"
     :mask="mask"
+    :rules="rules"
     outlined
     dense
+    clearable
   />
 </template>
 

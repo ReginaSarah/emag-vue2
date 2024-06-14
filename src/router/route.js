@@ -1,6 +1,6 @@
 
 import VueRouter from "vue-router";
-import Dashboard from "@/Dashboard.vue";
+import Dash from "@/views/Dash.vue";
 import Regras from "@/views/Regras.vue";
 import Funcoes from "@/views/Funcoes.vue";
 import Conteudo from "@/views/Conteudo.vue"
@@ -10,7 +10,7 @@ import Vue from "vue";
 Vue.use(VueRouter);
 
 const routes = [
-	{ path: "/dash", name: "Dashboard", component: Dashboard },
+	{ path: "/", name: "Dash", component: Dash },
     { path: "/regras", name: "Regras", component: Regras },
 	{ path: "/funcoes", name: "Funcoes", component: Funcoes },
 	{ path: "/conteudo", name: "Conteudo", component: Conteudo },

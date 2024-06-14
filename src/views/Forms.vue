@@ -20,7 +20,7 @@
                 text="nome"
                 v-model="form.tipoTeste"
                 label="Tipo de Teste:"
-                :isRequired="false"
+                :isRequired="true"
               />
             </v-col>
           </v-row>

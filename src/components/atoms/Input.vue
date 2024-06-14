@@ -9,6 +9,7 @@
     @input="$emit('input', $event)"
     @blur="emitBlurEvent"
     outlined
+    clearable
     dense
   />
 </template>
